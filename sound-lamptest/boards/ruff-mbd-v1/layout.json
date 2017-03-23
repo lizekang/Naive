@@ -1,0 +1,12 @@
+{
+    "mapping": {
+        "led/vcc": "ruff-mbd-v1/vdd-0",
+        "button/gnd": "ruff-mbd-v1/gnd-2",
+        "button/vcc": "ruff-mbd-v1/vdd-0",
+        "button/gpio": "ruff-mbd-v1/gpio-11",
+        "led/pwm-r": "ruff-mbd-v1/pwm-2",
+        "led/pwm-g": "ruff-mbd-v1/pwm-1",
+        "led/pwm-b": "ruff-mbd-v1/pwm-0",
+        "led/gnd": "ruff-mbd-v1/gnd-5"
+    }
+}
