@@ -27,9 +27,21 @@ function rmdir(path){
         else console.log('didn\'t remove the %s sucessfully', path);
     });
 }
-
+function filewrite(path, data){
+    fs.open(path, 'w+', 555, function(err, fd){
+            console.log('start to write the file %s', path);
+            fs.write(fd, data, function(err, written, string){
+            if (err) throw err;
+            console.log('writing......\nerr%s\nwritten%s\nstring%s\n',
+                    err, written, string);
+            console.log('write %s over', path);
+         });
+        fs.closeSync(fd);
+    });
+}
 //exports
 module.exports.ls = ls;
 module.exports.mkdir = mkdir;
 module.exports.rmdir = rmdir;
+module.exports.filewrite = filewrite;
 
