@@ -28,6 +28,7 @@ $.ready(function (error) {
     //    testmod.test();
     //    console.log('over');
     //json写入测试
+    jsop.writejson();
     
 			/**
     //继电器打开，控制相应的灯泡打开
